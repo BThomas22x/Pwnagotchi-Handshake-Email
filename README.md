@@ -21,9 +21,9 @@ then do<br>
 sudo chmod ug+x /usr/bin/hcxpcapngtool<br><br>
 
 Then, you need to edit the config.toml:<br>
-main.plugins.discord_uploader.enabled = true<br>
-main.plugins.discord_uploader.discord_token = 'YOUR_DISCORD_BOT_TOKEN'<br>
-main.plugins.discord_uploader.channel_id = 'YOUR_DISCORD_CHANNEL_ID'<br><br>
+main.plugins.pwncord.enabled = true<br>
+main.plugins.pwncord.discord_token = 'YOUR_DISCORD_BOT_TOKEN'<br>
+main.plugins.pwncord.channel_id = 'YOUR_DISCORD_CHANNEL_ID'<br><br>
 
 Then, go to the discord Developer portal, create a new application, and add a bot to it.  Copy the bot token and add it to config.toml. Then invite the bot to your server and do any and all permissions you want to do with it.  Finally, restart your pwnagotchi to load the new plugin.<br>
 sudo systemctl restart pwnagotchi<br><br>
