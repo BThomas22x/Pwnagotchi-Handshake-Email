@@ -3,6 +3,7 @@ import smtplib
 import logging
 from email.mime.multipart import MIMEMultipart
 from email.mime.base import MIMEBase
+from email.mime.text import MIMEText
 from email import encoders
 from pwnagotchi.plugins import Plugin
 from pwnagotchi.utils import StatusFile
@@ -27,7 +28,7 @@ class Handymail(Plugin):
             self._send_email(filename)
             logging.info(f"[Handymail] Handshake {filename} emailed successfully.")
         except Exception as e:
-            logging.error(f"Handymail Failed to send email: {e}")
+            logging.error(f"[Handymail] Failed to send email: {e}")
 
     def _send_email(self, file_path):
         from_addr = 'your_email@example.com'
