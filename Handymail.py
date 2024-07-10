@@ -54,7 +54,7 @@ class Handymail(Plugin):
         server.login(from_addr, 'your_password')
         server.send_message(msg)
         server.quit()
-
+#2 factor authentication for your email must be off for this to work 
 #Make sure you edit your config.toml file with these options:
 #main.plugins.email_handshakes.enabled = true
 #main.plugins.email_handshakes.to_addr = 'recipient@example.com'
