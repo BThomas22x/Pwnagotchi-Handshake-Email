@@ -17,7 +17,7 @@ main.plugins.Handymail.smtp_pass = "your_password"<br>
 <u>SMTP Servers (Just a few):</u><br>
 Gmail - smtp.gmail.com<br>
 Yahoo - smtp.mail.yahoo.com<br>
-Outlook - smtp-mail.outlook.com<br>
+Outlook - smtp.office365.com<br>
 AOL - smtp.aol.com<br>
 ProtonMail - smtp.protonmail.ch<br>
 Zoho Mail - smtp.zoho.com<br>
