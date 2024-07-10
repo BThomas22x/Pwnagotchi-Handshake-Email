@@ -9,11 +9,19 @@ edit your config.toml file with these settings:<br>
 main.plugins.Handymail.enabled = true<br>
 main.plugins.Handymail.to_addr = "recipient@example.com" (Put your own address in here to email to yourself.  Or to another email if you need to send to another for some reason.)<br>
 main.plugins.Handymail.from_addr = "your_email@example.com"<br>
-main.plugins.Handymail.smtp_server = "smtp.example.com" (eg. smtp.gmail.com)<br>
+main.plugins.Handymail.smtp_server = "smtp.example.com"<br>
 main.plugins.Handymail.smtp_port = 587 (This can be changed if necessary - 465, 587)<br>
 main.plugins.Handymail.smtp_user = "your_email@example.com"<br>
-main.plugins.Handymail.smtp_pass = "your_password"<br><br>
+main.plugins.Handymail.smtp_pass = "your_password"<br>
 
+<u>SMTP Servers (Just a few):</u><br>
+Gmail - smtp.gmail.com<br>
+Yahoo - smtp.mail.yahoo.com<br>
+Outlook - smtp-mail.outlook.com<br>
+AOL - smtp.aol.com<br>
+ProtonMail - smtp.protonmail.ch<br>
+Zoho Mail - smtp.zoho.com<br>
+<b> All use ports 465 or 587 (Default 587)</b><br><br>
 <B><U>Pwncord</B></U><br>
 for this to work, you must have hcxpcapngtool, so first do:<br>
 sudo apt-get install hcxtools<br>
