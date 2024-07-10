@@ -7,7 +7,7 @@ from email import encoders
 from pwnagotchi.plugins import Plugin
 from pwnagotchi.utils import StatusFile
 
-class EmailHandshakes(Plugin):
+class Handymail(Plugin):
     __author__ = 'BThomas22x'
     __version__ = '1.0.0'
     __license__ = 'GPLv3'
@@ -18,14 +18,14 @@ class EmailHandshakes(Plugin):
 
     def on_loaded(self):
         self.ready = True
-        logging.info("Handymail Plugin loaded and ready.")
+        logging.info("[Handymail] Plugin loaded and ready.")
 
     def on_handshake(self, filename, access_point, client_station, **kwargs):
         if not self.ready:
             return
         try:
             self._send_email(filename)
-            logging.info(f"Handymail Handshake {filename} emailed successfully.")
+            logging.info(f"[Handymail] Handshake {filename} emailed successfully.")
         except Exception as e:
             logging.error(f"Handymail Failed to send email: {e}")
 
