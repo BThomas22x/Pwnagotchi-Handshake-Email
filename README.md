@@ -26,6 +26,13 @@
   __________________________________________________________<br>
   Now that we're in here, let's write the code.  Try to type it as close to this as you can.  I'm sure some spacing won't make too much of a difference.
   __________________________________________________________
+  # Set default values for all following accounts.
+  defaults
+  auth           on
+  tls            on
+  tls_trust_file /etc/ssl/certs/ca-certificates.crt
+  logfile        ~/.msmtp.log
+  
   account          gmail
   host             smtp.gmail.com (you can use other providers here, I'll list some after this)
   port             587 (This is going to be the same for all providers)
@@ -35,7 +42,7 @@
   password         your-password (for gmail, you'll probably have to set up an app password. Settings, security, and search for "app password" and create one)
 
   #default
-  account default  gmail (or whatever you set up)
+  account default : gmail (or whatever you set up)
   ___________________________________________________________<br>
   Hit ctrl+x to save (press y) and then hit enter to keep the name.
   
